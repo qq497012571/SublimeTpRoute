@@ -30,7 +30,7 @@ class TpRouteCommand(sublime_plugin.TextCommand):
 				actions = m
 
 		moduleName = self.getTpModuleName(filename)
-		controllerName = os.path.basename(filename).replace('Controller.class.php','')
+		controllerName = os.path.basename(filename).replace('Controller.class.php','').replace('.php','')
 
 		for sel in self.view.sel():
 			# 获取当前选中文字
