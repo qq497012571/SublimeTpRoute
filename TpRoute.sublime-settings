@@ -1,0 +1,3 @@
+{
+	"tp_host" : "http://localhost/index.php?m={m}&c={c}&a={a}",
+}
