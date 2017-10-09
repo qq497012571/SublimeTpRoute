@@ -22,7 +22,7 @@ class TpRouteCommand(sublime_plugin.TextCommand):
 
 		# 获取当前文件里的所有方法名
 		actions = []
-		with open(filename, 'r') as f:
+		with open(filename, 'r',encoding = 'utf-8') as f:
 			text = f.read()
 			# 匹配方法名
 			m = re.findall(r'function\s+([\w\d_]+)',text)
