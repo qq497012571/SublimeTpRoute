@@ -85,15 +85,4 @@ class TpRouteCommand(sublime_plugin.TextCommand):
 				k,v = s.split('=')
 				param += ("%s=%s&" % (k,v))
 
-		return param.rstrip('&')
-
-
-
-
-
-
-
-
-
-
-
+		return param.rstrip('&').replace("'",'').replace('"','')
